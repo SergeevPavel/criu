@@ -6,7 +6,6 @@ import os
 
 import pycriu
 
-
 class ApplicationModel:
     def __init__(self, images_folder):
         self.images_folder = os.path.abspath(images_folder)

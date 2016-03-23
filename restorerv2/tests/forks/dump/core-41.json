@@ -1,0 +1,17 @@
+{
+    "magic": "CORE", 
+    "entries": [
+        {
+            "mtype": "X86_64", 
+            "tc": {
+                "task_state": 2, 
+                "exit_code": 0, 
+                "personality": 0, 
+                "flags": 0, 
+                "blk_sigset": "0x0", 
+                "comm": "forks"
+            }
+        }
+    ]
+}
+

@@ -1,0 +1,114 @@
+[
+	{
+		"command": "FORK",
+		"pid": 1,
+		"child_pid": 6
+	},
+	{
+		"command": "FORK",
+		"pid": 6,
+		"child_pid": 7
+	},
+	{
+		"command": "SET_SID",
+		"pid": 7
+	},
+	{
+		"command": "CLONE",
+		"pid": 7,
+		"child_pid": 8
+	},
+	{
+		"command": "EXIT",
+		"pid": 7
+	},
+	{
+		"command": "WAIT",
+		"pid": 6,
+		"child_pid": 7
+	},
+	{
+		"command": "FORK",
+		"pid": 8,
+		"child_pid": 9
+	},
+	{
+		"command": "FORK",
+		"pid": 9,
+		"child_pid": 10
+	},
+	{
+		"command": "FORK",
+		"pid": 10,
+		"child_pid": 11
+	},
+	{
+		"command": "FORK",
+		"pid": 10,
+		"child_pid": 12
+	},
+	{
+		"command": "SET_SID",
+		"pid": 12
+	},
+	{
+		"command": "CLONE",
+		"pid": 12,
+		"child_pid": 13
+	},
+	{
+		"command": "CLONE",
+		"pid": 12,
+		"child_pid": 14
+	},
+	{
+		"command": "EXIT",
+		"pid": 12
+	},
+	{
+		"command": "WAIT",
+		"pid": 10,
+		"child_pid": 12
+	},
+	{
+		"command": "FORK",
+		"pid": 14,
+		"child_pid": 15
+	},
+	{
+		"command": "SET_CHILD_REAPER",
+		"pid": 6,
+		"value": true
+	},
+	{
+		"command": "EXIT",
+		"pid": 14
+	},
+	{
+		"command": "WAIT",
+		"pid": 10,
+		"child_pid": 14
+	},
+	{
+		"command": "SET_CHILD_REAPER",
+		"pid": 6,
+		"value": false
+	},
+	{
+		"command": "EXIT",
+		"pid": 9
+	},
+	{
+		"command": "WAIT",
+		"pid": 8,
+		"child_pid": 9
+	},
+	{
+		"command": "SET_SID",
+		"pid": 6
+	},
+	{
+		"command": "SET_SID",
+		"pid": 10
+	}
+]

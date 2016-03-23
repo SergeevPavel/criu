@@ -1,0 +1,20 @@
+{
+    "magic": "REG_FILES", 
+    "entries": [
+        {
+            "id": 2, 
+            "flags": "O_WRONLY | O_LARGEFILE", 
+            "pos": 0, 
+            "fown": {
+                "uid": 0, 
+                "euid": 0, 
+                "signum": 0, 
+                "pid_type": 0, 
+                "pid": 0
+            }, 
+            "name": "/root/host_files/criu/playground/fds/test.txt", 
+            "size": 26
+        }
+    ]
+}
+

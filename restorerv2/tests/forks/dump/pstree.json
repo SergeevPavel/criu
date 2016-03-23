@@ -1,0 +1,33 @@
+{
+    "magic": "PSTREE", 
+    "entries": [
+        {
+            "pid": 51, 
+            "ppid": 0, 
+            "pgid": 51, 
+            "sid": 51, 
+            "threads": [
+                51
+            ]
+        }, 
+        {
+            "pid": 41, 
+            "ppid": 51, 
+            "pgid": 41, 
+            "sid": 51, 
+            "threads": [
+                41
+            ]
+        }, 
+        {
+            "pid": 42, 
+            "ppid": 51, 
+            "pgid": 42, 
+            "sid": 51, 
+            "threads": [
+                42
+            ]
+        }
+    ]
+}
+

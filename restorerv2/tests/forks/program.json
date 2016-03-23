@@ -1,0 +1,25 @@
+[
+    {
+        "command": "FORK",
+        "pid": 0,
+        "child_pid": 51
+    },
+    {
+        "command": "SET_SID",
+        "pid": 51
+    },
+    {
+        "command": "FORK",
+        "pid": 51,
+        "child_pid": 41
+    },
+    {
+        "command": "FORK",
+        "pid": 51,
+        "child_pid": 42
+    },
+    {
+        "command": "EXIT",
+        "pid": 41
+    }
+]
