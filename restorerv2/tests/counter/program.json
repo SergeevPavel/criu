@@ -1,11 +1,7 @@
 [
     {
-        "command": "FORK",
-        "pid": 0,
+        "pid": 0, 
+        "command": "FORK", 
         "child_pid": 10509
-    },
-    {
-        "command": "SET_SID",
-        "pid": 10509
     }
 ]

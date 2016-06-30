@@ -4,7 +4,7 @@
         {
             "id": 2, 
             "flags": "O_WRONLY | O_LARGEFILE", 
-            "pos": 0, 
+            "pos": 5, 
             "fown": {
                 "uid": 0, 
                 "euid": 0, 
@@ -12,7 +12,7 @@
                 "pid_type": 0, 
                 "pid": 0
             }, 
-            "name": "/root/host_files/criu/playground/fds/test.txt", 
+            "name": "/1.txt", 
             "size": 26
         }
     ]

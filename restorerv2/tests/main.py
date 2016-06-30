@@ -1,13 +1,17 @@
 
 import os
 
-from restorerv2.model import Application
+from restorerv2.loader import load_from_jsons
+from restorerv2.executors import MockExecutor
 from restorerv2.interpreter import Interpreter
+from restorerv2.generator import ProgramBuilder
+from restorerv2.utils import ApplicationComparator, ApplicationView
 
 TESTS_LIST = [
-        "fds"
-#       "counter",
-#       "forks"
+#        "fds1",
+#        "fds2"
+#        "counter",
+#        "forks"
         ]
 
 ROOT_TESTS_PATH = "restorerv2/tests"
@@ -17,18 +21,23 @@ def run_test(test_name):
     test_path = os.path.join(ROOT_TESTS_PATH, test_name)
     dump_path = os.path.join(test_path, "dump")
     program_path = os.path.join(test_path, "program.json")
+    dumped_app = load_from_jsons(dump_path)
     
-    dumped_app = Application.load_from_jsons(dump_path)
-    interpreter = Interpreter()
-    restored_app = interpreter.execute_program(program_path)
-    if dumped_app == restored_app:
+    program_builder = ProgramBuilder()
+    program_builder.write_program(dumped_app, program_path)
+
+    executor = MockExecutor()
+    interpreter = Interpreter(executor)
+    interpreter.execute_program(program_path)
+    restored_app = executor.get_application()
+    if ApplicationComparator(dumped_app, restored_app).is_equals():
         print("OK!")
     else:
         print("Failed!")
         print("Dumped:")
-        print(dumped_app)
+        print(ApplicationView(dumped_app).text())
         print("Restored:")
-        print(restored_app)
+        print(ApplicationView(restored_app).text())
 
 
 def main():

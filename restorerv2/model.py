@@ -174,6 +174,27 @@ class Application:
         self.reg_files[ifd] = new_file
         p.add_fd(fd, ifd)
 
+    def close(self, pid, fd):
+        p = self._find_by_pid(pid)
+        ifd = p.fd_table.pop(fd, None)
+        holders = self._get_file_holders_by_ifd(ifd)
+        if not holders:
+            self.reg_files.pop(ifd, None)
+
+    def dup2(self, pid, old_fd, new_fd):
+        p = self._find_by_pid(pid)
+        p.fd_table[new_fd] = p.fd_table[old_fd]
+
+    def lseek(self, pid, fd, pos):
+        p = self._find_by_pid(pid)
+        ifd = p.fd_table[fd]
+        self.reg_files[ifd].lseek(pos)
+
+    def transfer_fd(self, from_pid, to_pid, fd, target_fd):
+        source = self._find_by_pid(from_pid)
+        target = self._find_by_pid(to_pid)
+        target.fd_table[target_fd] = source.fd_table[fd]
+
     def _get_file_holders_by_ifd(self, ifd):
         holders = []
         for p in self.processes:
@@ -190,7 +211,7 @@ class Application:
 
     def _compare_opened_files(self, other):
         self_holders = self._get_file_holders_by_file_mapping()
-        other_holders = self._get_file_holders_by_file_mapping()
+        other_holders = other._get_file_holders_by_file_mapping()
         return self_holders == other_holders
 
     def _compare_pstree(self, other):
@@ -231,12 +252,19 @@ class Application:
 
     @staticmethod
     def load_from_imgs(imgs_path):
-        return Application.load(imgs_path, "imgs")
+        return Application.load(imgs_path, "img")
 
     @staticmethod
     def load_from_jsons(jsons_path):
         return Application.load(jsons_path, "json")
 
+
+class Vma:
+    def __init__(self, start, end, is_private, is_named):
+        self.start = start
+        self.end = end
+        self.is_private = is_private
+        self.is_named = is_named
 
 
 def load_img(imgs_folder, img_name):

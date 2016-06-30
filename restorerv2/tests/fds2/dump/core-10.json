@@ -1,0 +1,11 @@
+{
+    "magic": "CORE", 
+    "entries": [
+        {
+            "tc": {
+                "task_state": 1, 
+                "exit_code": 0
+            }
+        }
+    ]
+}

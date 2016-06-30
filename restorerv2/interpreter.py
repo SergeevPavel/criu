@@ -3,7 +3,9 @@ import json
 from model import Process, Application
 
 class Interpreter:
-    def __init__(self, commands_description_path="restorerv2/commands_description.json"):
+    def __init__(self, executor,
+            commands_description_path="restorerv2/commands_description.json"):
+        self.executor = executor
         with open(commands_description_path, "r") as commands_file:
             self.commands = json.load(commands_file)
 
@@ -14,43 +16,53 @@ class Interpreter:
         if errors:
             print("\n".join(errors))
             return None
-        self.app = Application()
         for statement in program:
             self._execute_statement(statement)
-        return self.app
 
     def _fork(self, pid, child_pid, **extras):
-        self.app.fork(pid, child_pid)
+        self.executor.fork(pid, child_pid)
 
     def _clone(self, pid, child_pid, **extras):
-        self.app.clone(pid, child_pid)
+        raise NotImplementedError()
 
     def _set_child_reaper(self, pid, value, **extras):
-        self.app.set_child_reaper(pid, value)
+        raise NotImplementedError()
 
     def _set_sid(self, pid, **extras):
-        self.app.set_sid(pid)
+        raise NotImplementedError()
 
     def _exit(self, pid, **extras):
-        self.app.exit(pid)
+        raise NotImplementedError()
 
     def _wait(self, pid, child_pid, **extras):
-        self.app.wait(pid, child_pid)
+        raise NotImplementedError()
 
     def _open(self, pid, path, fd, **extras) :
-        self.app.open(pid, path, fd)
+        self.executor.open(pid, path, fd)
 
     def _close(self, pid, fd, **extras):
-        pass
+        self.executor.close(pid, fd)
 
     def _dup2(self, pid, old_fd, new_fd, **extras):
-        pass
+        self.executor.dup2(pid, old_fd, new_fd)
 
-    def _lseek(self, pid, fd_offset, **extras):
-        pass
+    def _lseek(self, pid, fd, offset, **extras):
+        self.executor.lseek(pid, fd, offset)
 
     def _transfer_fd(self, from_pid, to_pid, fd, target_fd, **extras):
-        pass
+        self.executor.transfer_fd(from_pid, to_pid, fd, target_fd)
+
+    def _mmap(self, pid, addr, length, fd, offset, is_shared, **extras):
+        self.executor.mmap(pid, addr, length, fd, offset, is_shared)
+
+    def _mmap_anon(self, pid, addr, length, is_shared, **extras):
+        self.executor.mmap_anon(pid, addr, length, is_shared)
+
+    def _mremap(self, pid, addr, new_addr, **extras):
+        self.executor.mremap(pid, addr, new_addr)
+
+    def _munmap(self, pid, addr, **extras):
+        self.executor.munmap(pid, addr)
 
     def _execute_statement(self, statement):
         pstree_commands = {
@@ -68,9 +80,16 @@ class Interpreter:
                 "LSEEK"            : self._lseek,
                 "TRANSFER_FD"      : self._transfer_fd
                 }
+        memory_commands = {
+                "MMAP"             : self._mmap,
+                "MMAP_ANON"        : self._mmap_anon,
+                "MREMAP"           : self._mremap,
+                "MUNMAP"           : self._munmap
+                }
         commands = {}
         commands.update(pstree_commands)
         commands.update(files_commands)
+        commands.update(memory_commands)
         return commands[statement["command"]](**statement)
 
     def _check_args(self, statement, required_args):

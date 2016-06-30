@@ -1,0 +1,135 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "FORK",$/;"	function	line:3
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "pid": 0,$/;"	function	line:4
+child_pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "child_pid": 10$/;"	function	line:5
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "SET_SID",$/;"	function	line:8
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "pid": 10$/;"	function	line:9
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "OPEN",$/;"	function	line:12
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "pid": 10,$/;"	function	line:13
+path	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "path": "\/1.txt",$/;"	function	line:14
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "fd": 4$/;"	function	line:15
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "FORK",$/;"	function	line:18
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "pid": 10,$/;"	function	line:19
+child_pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "child_pid": 11$/;"	function	line:20
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "FORK",$/;"	function	line:23
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "pid": 10,$/;"	function	line:24
+child_pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "child_pid": 12$/;"	function	line:25
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "LSEEK",$/;"	function	line:28
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "pid": 10,$/;"	function	line:29
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "fd": 4,$/;"	function	line:30
+offset	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "offset": 5$/;"	function	line:31
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "CLOSE",$/;"	function	line:34
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "pid": 11,$/;"	function	line:35
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "fd": 4$/;"	function	line:36
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "OPEN",$/;"	function	line:39
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "pid": 11,$/;"	function	line:40
+path	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "path": "\/2.txt",$/;"	function	line:41
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "fd": 4$/;"	function	line:42
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "DUP2",$/;"	function	line:45
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "pid": 11,$/;"	function	line:46
+old_fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "old_fd": 4,$/;"	function	line:47
+new_fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "new_fd": 5$/;"	function	line:48
+command	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "command": "TRANSFER_FD",$/;"	function	line:51
+from_pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "from_pid": 11,$/;"	function	line:52
+to_pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "to_pid": 12,$/;"	function	line:53
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "fd": 5,$/;"	function	line:54
+target_fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/program.json	/^        "target_fd": 5$/;"	function	line:55
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-12.json	/^    "magic": "CORE", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-12.json	/^    "entries": [$/;"	function	line:3
+tc	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-12.json	/^            "tc": {$/;"	function	line:5
+task_state	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-12.json	/^                "task_state": 1, $/;"	function	line:6
+exit_code	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-12.json	/^                "exit_code": 0$/;"	function	line:7
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-11.json	/^    "magic": "CORE", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-11.json	/^    "entries": [$/;"	function	line:3
+tc	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-11.json	/^            "tc": {$/;"	function	line:5
+task_state	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-11.json	/^                "task_state": 1, $/;"	function	line:6
+exit_code	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-11.json	/^                "exit_code": 0$/;"	function	line:7
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-10.json	/^    "magic": "CORE", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-10.json	/^    "entries": [$/;"	function	line:3
+tc	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-10.json	/^            "tc": {$/;"	function	line:5
+task_state	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-10.json	/^                "task_state": 1, $/;"	function	line:6
+exit_code	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/core-10.json	/^                "exit_code": 0$/;"	function	line:7
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-12.json	/^    "magic": "IDS", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-12.json	/^    "entries": [$/;"	function	line:3
+vm_id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-12.json	/^            "vm_id": 4, $/;"	function	line:5
+files_id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-12.json	/^            "files_id": 4$/;"	function	line:6
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^    "magic": "FDINFO", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^    "entries": [$/;"	function	line:3
+id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^            "id": 3, $/;"	function	line:5
+flags	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^            "flags": 0, $/;"	function	line:6
+type	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^            "type": "REG", $/;"	function	line:7
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^            "fd": 4$/;"	function	line:8
+id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^            "id": 3, $/;"	function	line:11
+flags	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^            "flags": 0, $/;"	function	line:12
+type	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^            "type": "REG", $/;"	function	line:13
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-3.json	/^            "fd": 5$/;"	function	line:14
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^    "magic": "FDINFO", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^    "entries": [$/;"	function	line:3
+id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^            "id": 2, $/;"	function	line:5
+flags	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^            "flags": 0, $/;"	function	line:6
+type	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^            "type": "REG", $/;"	function	line:7
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^            "fd": 4$/;"	function	line:8
+id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^            "id": 3, $/;"	function	line:11
+flags	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^            "flags": 0, $/;"	function	line:12
+type	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^            "type": "REG", $/;"	function	line:13
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-4.json	/^            "fd": 5$/;"	function	line:14
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-11.json	/^    "magic": "IDS", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-11.json	/^    "entries": [$/;"	function	line:3
+vm_id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-11.json	/^            "vm_id": 3, $/;"	function	line:5
+files_id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-11.json	/^            "files_id": 3$/;"	function	line:6
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^    "magic": "REG_FILES", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^    "entries": [$/;"	function	line:3
+id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "id": 2, $/;"	function	line:5
+flags	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "flags": "O_WRONLY | O_LARGEFILE", $/;"	function	line:6
+pos	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "pos": 5, $/;"	function	line:7
+fown	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "fown": {$/;"	function	line:8
+uid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "uid": 0, $/;"	function	line:9
+euid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "euid": 0, $/;"	function	line:10
+signum	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "signum": 0, $/;"	function	line:11
+pid_type	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "pid_type": 0, $/;"	function	line:12
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "pid": 0$/;"	function	line:13
+name	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "name": "\/1.txt", $/;"	function	line:15
+size	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "size": 26$/;"	function	line:16
+id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "id": 3, $/;"	function	line:19
+flags	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "flags": "O_WRONLY | O_LARGEFILE", $/;"	function	line:20
+pos	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "pos": 0, $/;"	function	line:21
+fown	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "fown": {$/;"	function	line:22
+uid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "uid": 0, $/;"	function	line:23
+euid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "euid": 0, $/;"	function	line:24
+signum	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "signum": 0, $/;"	function	line:25
+pid_type	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "pid_type": 0, $/;"	function	line:26
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^                "pid": 0$/;"	function	line:27
+name	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "name": "\/2.txt", $/;"	function	line:29
+size	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/reg-files.json	/^            "size": 10$/;"	function	line:30
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-2.json	/^    "magic": "FDINFO", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-2.json	/^    "entries": [$/;"	function	line:3
+id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-2.json	/^            "id": 2, $/;"	function	line:5
+flags	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-2.json	/^            "flags": 0, $/;"	function	line:6
+type	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-2.json	/^            "type": "REG", $/;"	function	line:7
+fd	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/fdinfo-2.json	/^            "fd": 4$/;"	function	line:8
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^    "magic": "PSTREE", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^    "entries": [$/;"	function	line:3
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "pid": 10, $/;"	function	line:5
+ppid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "ppid": 0, $/;"	function	line:6
+pgid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "pgid": 10, $/;"	function	line:7
+sid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "sid": 10, $/;"	function	line:8
+threads	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "threads": [$/;"	function	line:9
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "pid": 11, $/;"	function	line:14
+ppid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "ppid": 10, $/;"	function	line:15
+pgid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "pgid": 11, $/;"	function	line:16
+sid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "sid": 10, $/;"	function	line:17
+threads	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "threads": [$/;"	function	line:18
+pid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "pid": 12, $/;"	function	line:23
+ppid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "ppid": 10, $/;"	function	line:24
+pgid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "pgid": 12, $/;"	function	line:25
+sid	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "sid": 10, $/;"	function	line:26
+threads	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/pstree.json	/^            "threads": [$/;"	function	line:27
+magic	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-10.json	/^    "magic": "IDS", $/;"	function	line:2
+entries	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-10.json	/^    "entries": [$/;"	function	line:3
+vm_id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-10.json	/^            "vm_id": 2, $/;"	function	line:5
+files_id	/home/pavel/coding/criu_env/share/criu/restorerv2/tests/fds/dump/ids-10.json	/^            "files_id": 2$/;"	function	line:6

@@ -46,6 +46,14 @@
 		"_description": "Wait child process termination"
 	},
 	{
+		"name": "START_THREAD",
+		"args": [
+			"pid",
+			"tid"
+		],
+		"_description": "Create additional thread for process"
+	},
+	{
 		"name": "OPEN",
 		"args": [
 			"pid",
@@ -60,34 +68,72 @@
 			"pid",
 			"fd"
 		],
-        "_description": "Close file descriptor"
+		"_description": "Close file descriptor"
 	},
 	{
 		"name": "DUP2",
 		"args": [
-            "pid",
+			"pid",
 			"old_fd",
 			"new_fd"
 		],
-        "_description": "Copy old_fd into new_fd"
+		"_description": "Copy old_fd into new_fd"
 	},
-    {
-        "name": "LSEEK",
-        "args": [
-            "pid",
-            "fd",
-            "offset"
-        ],
-        "_description": "Set offset for regular file"
-    },
-    {
-        "name": "TRANSFER_FD",
-        "args": [
-            "from_pid",
-            "to_pid",
-            "fd",
-            "target_fd"
-        ],
-        "_description": "Transfer fd between processes"
-    }
+	{
+		"name": "LSEEK",
+		"args": [
+			"pid",
+			"fd",
+			"offset"
+		],
+		"_description": "Set offset for regular file"
+	},
+	{
+		"name": "TRANSFER_FD",
+		"args": [
+			"from_pid",
+			"to_pid",
+			"fd",
+			"target_fd"
+		],
+		"_description": "Transfer fd between processes"
+	},
+	{
+		"name": "MMAP",
+		"args": [
+			"pid",
+			"addr",
+			"length",
+			"fd",
+			"offset",
+			"is_shared"
+		],
+		"_description": "Create memory mapping"
+	},
+	{
+		"name": "MMAP_ANON",
+		"args": [
+			"pid",
+			"addr",
+			"length",
+			"is_shared"
+		],
+		"_description": "Create anonymous memory mapping"
+	},
+	{
+		"name": "MREMAP",
+		"args": [
+			"pid",
+			"addr",
+			"new_addr"
+		],
+		"_description": "Move memory mapping"
+	},
+	{
+		"name": "MUNMAP",
+		"args": [
+			"pid",
+			"addr"
+		]
+	}
 ]

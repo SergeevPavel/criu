@@ -1,0 +1,12 @@
+{
+    "magic": "FDINFO", 
+    "entries": [
+        {
+            "id": 2, 
+            "flags": 0, 
+            "type": "REG", 
+            "fd": 4
+        }
+    ]
+}
+

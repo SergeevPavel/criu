@@ -1,0 +1,56 @@
+[
+    {
+        "pid": 0, 
+        "command": "FORK", 
+        "child_pid": 10
+    }, 
+    {
+        "pid": 10, 
+        "fd": 0, 
+        "command": "OPEN", 
+        "path": "/1.txt"
+    }, 
+    {
+        "pid": 10, 
+        "fd": 0, 
+        "command": "LSEEK", 
+        "offset": 5
+    }, 
+    {
+        "pid": 10, 
+        "command": "FORK", 
+        "child_pid": 11
+    }, 
+    {
+        "pid": 10, 
+        "command": "FORK", 
+        "child_pid": 12
+    }, 
+    {
+        "pid": 10, 
+        "fd": 0, 
+        "command": "CLOSE"
+    }, 
+    {
+        "pid": 11, 
+        "old_fd": 0, 
+        "command": "DUP2", 
+        "new_fd": 4
+    }, 
+    {
+        "pid": 11, 
+        "fd": 0, 
+        "command": "CLOSE"
+    }, 
+    {
+        "pid": 12, 
+        "old_fd": 0, 
+        "command": "DUP2", 
+        "new_fd": 4
+    }, 
+    {
+        "pid": 12, 
+        "fd": 0, 
+        "command": "CLOSE"
+    }
+]
